@@ -7,7 +7,7 @@
   --gray-color: #7f888f;
   --main-transition: 0.3s;
   --padding-top: 80px;
-  --padding-bootom: 80px;
+  --padding-bottom: 80px;
 }
 * {
   box-sizing: border-box;
@@ -137,3 +137,269 @@ a {
   }
 }
 /* End Header  */
+
+/* Start Landing Page  */
+.landing-page {
+  min-height: calc(100vh - 75px);
+  background-color: var(--main-color);
+  position: relative;
+}
+.landing-page .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-page .container .content {
+  width: 50%;
+}
+.landing-page .content p:first-child {
+  color: var(--white-color);
+  font-size: 30px;
+}
+.landing-page .content h1 {
+  font-size: 60px;
+}
+.landing-page .content h1 span {
+  color: var(--white-color);
+}
+.landing-page .content p:not(:last-child) {
+  color: var(--dark-color);
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  word-spacing: -2px;
+}
+.landing-page .content .shop-now {
+  padding: 10px 15px;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border-radius: 12px;
+  transition: var(--main-transition);
+  font-size: 18px;
+  display: block;
+  width: fit-content;
+}
+.landing-page .content .shop-now:hover {
+  background-color: #e75b5b;
+  transform: scale(1.1);
+}
+.landing-page image {
+  width: 50%;
+}
+.landing-page .image img {
+  width: 180px;
+}
+/* End Landing Page  */
+
+/* Start Our Features  */
+.features {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+.features .container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.features .container .box {
+  width: 150px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
+  transition: var(--main-transition);
+}
+.features .container .box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
+}
+.features .container .box img {
+  width: 100%;
+  transition: var(--main-transition);
+}
+.features .container .box:hover img {
+  transform: scale(1.1) rotate(8deg);
+}
+.features .container .box p {
+  color: var(--dark-color);
+  margin: 15px auto;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+.features .container .box:first-child p {
+  background-color: var(--red-color);
+}
+.features .container .box:nth-child(2) p {
+  background-color: rgb(187, 223, 187);
+}
+.features .container .box:nth-child(3) p {
+  background-color: rgb(189, 238, 231);
+}
+.features .container .box:nth-child(4) p {
+  background-color: rgb(189, 238, 231);
+}
+.features .container .box:nth-child(5) p {
+  background-color: rgb(230, 218, 218);
+}
+.features .container .box:last-child p {
+  background-color: var(--red-color);
+}
+/* End Our Features  */
+
+/* Start Products  */
+.products,
+.new {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  text-align: center;
+}
+.title {
+  line-height: 0.1;
+}
+.title h1 {
+  color: var(--dark-color);
+  letter-spacing: -1px;
+}
+.title p {
+  color: var(--gray-color);
+  letter-spacing: 2px;
+}
+.products .container,
+.new .container {
+  margin-top: 50px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.products .container .product,
+.new .container .product {
+  width: 250px;
+  padding: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--main-transition);
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+.products .container .product:hover,
+.new .container .product:hover {
+  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+.products .container .product img,
+.new .container .product img {
+  width: 100%;
+  border-radius: 12px;
+  transition: var(--main-transition);
+}
+.products .container .product:hover img,
+.new .container .product:hover img {
+  transform: scale(1.1) rotate(5deg);
+}
+.products .container .product span:first-child,
+.new .container .product span:first-child {
+  display: block;
+  margin-top: 15px;
+  color: var(--gray-color);
+  margin-bottom: 5px;
+}
+.products .container .product h3,
+.new .container .product h3 {
+  color: var(--dark-color);
+  margin-bottom: 5px;
+}
+.products .container .product .stars svg,
+.new .container .product .stars svg {
+  color: gold;
+}
+.products .container .product .price,
+.new .container .product .price {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: -1px;
+  color: green;
+}
+.products .container .product .cart,
+.new .container .product .cart {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: rgba(49, 179, 70, 0.329);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: var(--main-transition);
+}
+.products .container .product .cart svg,
+.new .container .product .cart svg {
+  color: green;
+}
+.products .container .product:hover .cart,
+.new .container .product:hover .cart {
+  animation: cart 1s linear;
+}
+/* End Products  */
+
+/* Start Discount */
+.discount {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  background-image: url(../img/banner/b2.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.discount .container {
+  text-align: center;
+  color: var(--white-color);
+}
+.discount .container p {
+  font-weight: bold;
+}
+.discount .container h1 span {
+  color: var(--red-color);
+}
+.discount .container .explore {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: var(--main-transition);
+  font-size: 20px;
+  cursor: pointer;
+}
+.discount .container .explore:hover {
+  transform: scale(1.1);
+}
+/* End Discount */
+
+/* Start Animation */
+@keyframes cart {
+  0%,
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(5px) scale(1.1);
+  }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateY(-5px) scale(1.1);
+  }
+}
+/* End Animation */
