@@ -384,6 +384,209 @@ a {
 }
 /* End Discount */
 
+/* Start Banner */
+.banner {
+  padding-top: var(--padding-top);
+  padding-bottom: 20px;
+}
+.banner .box-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  color: var(--white-color);
+}
+@media (max-width: 767px) {
+  .banner .box-one {
+    flex-direction: column;
+    margin-bottom: 245px;
+  }
+}
+.banner .box-one .box {
+  background-size: cover;
+  width: 48%;
+  height: 100%;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+@media (max-width: 767px) {
+  .banner .box-one .box {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.banner .box-one .box:first-child {
+  background-image: url(../img/banner/b17.jpg);
+}
+.banner .box-one .box:last-child {
+  background-image: url(../img/banner/b10.jpg);
+}
+.banner .box-one .box p:first-child {
+  color: var(--gray-color);
+  font-size: 19px;
+}
+.banner .box-one .box h1 {
+  text-transform: lowercase;
+}
+.banner .box-one .box h1 + p {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.banner .box-one .box button {
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.banner .box-one .box:hover button {
+  background-color: rgb(15, 56, 15);
+  border: none;
+}
+.banner .box-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 200px;
+  margin-top: 30px;
+  text-align: center;
+  color: var(--white-color);
+}
+@media (max-width: 767px) {
+  .banner .box-two {
+    flex-direction: column;
+  }
+}
+.banner .box-two .box {
+  background-size: cover;
+  height: 200px;
+  width: 31%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .banner .box-two .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.banner .box-two .box:first-child {
+  background-image: url(../img/banner/b18.jpg);
+}
+.banner .box-two .box:nth-child(2) {
+  background-image: url(../img/banner/b4.jpg);
+}
+.banner .box-two .box:last-child {
+  background-image: url(../img/banner/b7.jpg);
+}
+.banner .box-two .box h1 {
+  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  .banner .box-two .box h1 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .banner .box-two .box h1 {
+    font-size: 40px;
+  }
+}
+.banner .box-two .box p {
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+}
+@media (max-width: 991px) {
+  .banner .box-two .box p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .banner .box-two .box p {
+    font-size: 35px;
+  }
+}
+/* End Banner */
+
+/* Start Sign Up  */
+.sign-up {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(../img/banner/b14.png);
+  background-size: cover;
+  background-color: rgb(80, 80, 173);
+  color: var(--white-color);
+}
+.sign-up .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .sign-up .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.sign-up .text {
+  width: 450px;
+}
+@media (max-width: 991px) {
+  .sign-up .text {
+    width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .sign-up .text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.sign-up .text h1 {
+  font-size: 25px;
+}
+.sign-up .text p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.sign-up .text p span {
+  font-weight: bold;
+  color: gold;
+}
+.sign-up form {
+  width: 400px;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .sign-up form {
+    width: 300px;
+  }
+}
+.sign-up form input:first-child {
+  width: 80%;
+  padding: 15px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+}
+:focus {
+  outline: none;
+}
+.sign-up form input:last-child {
+  border: none;
+  background-color: rgb(92, 207, 81);
+  flex: 1;
+  color: var(--white-color);
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+/* End Sign Up  */
+
 /* Start Animation */
 @keyframes cart {
   0%,
