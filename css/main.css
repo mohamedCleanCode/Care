@@ -587,6 +587,78 @@ a {
 }
 /* End Sign Up  */
 
+/* Start Footer  */
+.footer {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+.footer .container .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+@media (max-width: 767px) {
+  .footer .container .content {
+    text-align: center;
+  }
+}
+.footer .box:first-child p {
+  margin-bottom: 15px;
+}
+.footer .box:first-child .follow-us {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .footer .box:first-child .follow-us {
+    display: inline-flex;
+  }
+}
+.footer .box:first-child .follow-us li {
+  margin-right: 15px;
+}
+.footer .box:first-child .follow-us svg {
+  color: var(--dark-color);
+  font-size: 22px;
+  transition: var(--main-transition);
+}
+.footer .box:first-child .follow-us a:hover svg {
+  transform: rotate(1turn);
+  color: var(--red-color);
+}
+.footer .box:nth-child(2) ul li,
+.footer .box:nth-child(3) ul li {
+  margin-bottom: 20px;
+}
+.footer .box:nth-child(2) ul li a,
+.footer .box:nth-child(3) ul li a {
+  transition: var(--main-transition);
+  color: var(--dark-color);
+}
+.footer .box:nth-child(2) ul li a:hover,
+.footer .box:nth-child(3) ul li a:hover {
+  color: var(--red-color);
+  font-size: 25px;
+}
+.footer .box:last-child p:not(:first-child) {
+  color: var(--gray-color);
+  margin-bottom: 15px;
+}
+.footer .box:last-child img {
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.footer .box:last-child img:hover {
+  transform: scale(1.1) rotate(6deg);
+}
+.footer .copy-right {
+  margin-top: 50px;
+  text-align: center;
+}
+.footer .copy-right svg {
+  color: red;
+}
+/* End Footer  */
+
 /* Start Animation */
 @keyframes cart {
   0%,
