@@ -704,6 +704,107 @@ a {
 }
 /* End Shop Page  */
 
+/* Start Product Deatils  */
+.product-details {
+  min-height: calc(100vh - 75px);
+}
+.product-details .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-height: 100%;
+}
+@media (max-width: 767px) {
+  .product-details .container {
+    flex-direction: column;
+  }
+}
+.product-details .product-image-details {
+  width: 48%;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .product-details .product-image-details {
+    width: 100%;
+  }
+}
+.product-details .product-image-details > img {
+  width: 100%;
+  height: 425px;
+  transition: var(--main-transition);
+  margin-bottom: 10px;
+}
+.product-details .product-image-details .small-imgs-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.product-details
+  .product-image-details
+  .small-imgs-container
+  .small-image:not(:last-child) {
+  margin-right: 10px;
+}
+.product-image-details .small-imgs-container img {
+  width: 100%;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.product-details .small-imgs-container .small-image:hover img {
+  transform: scale(1.1) rotate(6deg);
+}
+.product-details .product-image-info {
+  width: 48%;
+}
+@media (max-width: 767px) {
+  .product-details .product-image-info {
+    width: 100%;
+  }
+}
+.product-details .product-image-info span {
+  display: block;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.product-details .product-image-info select {
+  display: block;
+  margin: 20px 0;
+  padding: 7px;
+  color: var(--dark-color);
+  font-weight: bold;
+}
+.product-details .product-image-info input {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  margin-right: 20px;
+}
+.product-details .product-image-info button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3f8736;
+  color: var(--white-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--main-transition);
+  border-radius: 6px;
+}
+.product-details .product-image-info button:hover {
+  transform: scale(1.1);
+}
+.product-details .product-image-info .info {
+  margin-top: 20px;
+}
+.product-details .product-image-info .info p {
+  margin-top: 20px;
+  line-height: 1.7;
+  color: var(--gray-color);
+  margin-bottom: 20px;
+}
+/* End Product Deatils  */
+
 /* Start Animation */
 @keyframes cart {
   0%,
