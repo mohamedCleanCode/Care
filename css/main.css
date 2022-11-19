@@ -1028,6 +1028,67 @@ a {
 }
 /* End Contact Page  */
 
+/* Start Cart Page  */
+.cart.active {
+  color: var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
+  transform: scale(1.5);
+}
+.cart-table {
+  padding: 60px 0;
+  width: 100%;
+}
+.cart-table table {
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .cart-table {
+    overflow: auto;
+  }
+}
+.cart-table table thead {
+  border: 1px solid black;
+}
+.cart-table table thead td {
+  padding: 15px;
+  border: 1px solid var(--gray-color);
+  border-left: none;
+  border-right: none;
+  font-weight: bold;
+}
+.cart-table table tbody td {
+  padding-top: 15px;
+}
+.cart-table table tbody img {
+  width: 100%;
+  transition: var(--main-transition);
+}
+.cart-table table tbody img:hover {
+  transform: scale(1.1);
+}
+.fa-circle-xmark {
+  font-size: 22px;
+  color: red;
+  transition: var(--main-transition);
+}
+.fa-circle-xmark:hover {
+  transform: scale(1.4);
+}
+.cart-table table tbody td:first-child,
+.cart-table table tbody td:last-child,
+.cart-table table tbody td:nth-child(4),
+.cart-table table tbody td:nth-child(5) {
+  width: 70px;
+}
+.cart-table table tbody td:nth-child(2) {
+  width: 100px;
+}
+.cart-table input {
+  width: 100%;
+}
+/* End Cart Page  */
+
 /* Start Animation */
 @keyframes cart {
   0%,
