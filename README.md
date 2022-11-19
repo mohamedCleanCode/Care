@@ -1,2 +1,3 @@
 # Ecommerce-1
-Vanilla HTML, CSS And JS
+Vanilla HTML, CSS
+# Site: https://mohamedcleancode.github.io/Care/
