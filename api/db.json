@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imgSrc": "http://127.0.0.1:5500/img/products/f4.jpg",
+      "headingProduct": "Cartoon Astronaust T-Shirt",
+      "priceProduct": "78",
+      "numbers": "1"
+    },
+    {
+      "id": 2,
+      "imgSrc": "http://127.0.0.1:5500/img/products/f5.jpg",
+      "headingProduct": "Cartoon Astronaust T-Shirt",
+      "priceProduct": "78",
+      "numbers": "1"
+    }
+  ]
+}

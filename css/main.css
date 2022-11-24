@@ -60,8 +60,11 @@ a {
 .header {
   height: 75px;
   background-color: var(--main-color);
-  position: relative;
+  position: sticky;
   box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+  z-index: 9999;
 }
 .header .container {
   height: 100%;
@@ -70,6 +73,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
+  background-color: var(--main-color);
 }
 .header .logo {
   width: 150px;
@@ -707,6 +711,7 @@ a {
 /* Start Product Deatils  */
 .product-details {
   min-height: calc(100vh - 75px);
+  padding-top: 60px;
 }
 .product-details .container {
   display: flex;
@@ -733,25 +738,6 @@ a {
   height: 425px;
   transition: var(--main-transition);
   margin-bottom: 10px;
-}
-.product-details .product-image-details .small-imgs-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.product-details
-  .product-image-details
-  .small-imgs-container
-  .small-image:not(:last-child) {
-  margin-right: 10px;
-}
-.product-image-details .small-imgs-container img {
-  width: 100%;
-  cursor: pointer;
-  transition: var(--main-transition);
-}
-.product-details .small-imgs-container .small-image:hover img {
-  transform: scale(1.1) rotate(6deg);
 }
 .product-details .product-image-info {
   width: 48%;
@@ -1071,6 +1057,7 @@ a {
   font-size: 22px;
   color: red;
   transition: var(--main-transition);
+  cursor: pointer;
 }
 .fa-circle-xmark:hover {
   transform: scale(1.4);
@@ -1088,6 +1075,17 @@ a {
   width: 100%;
 }
 /* End Cart Page  */
+
+.cart-counter {
+  width: fit-content;
+  margin: 20px auto 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.cart-counter span {
+  color: red;
+}
 
 /* Start Animation */
 @keyframes cart {

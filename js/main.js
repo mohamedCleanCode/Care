@@ -17,19 +17,15 @@ links.forEach((link) => {
 });
 
 // Logic Of Shop Page
-let productImage = document.querySelectorAll(".product-shop");
+let productImage = document.querySelectorAll(".product .cart");
 productImage.forEach((product) => {
   product.addEventListener("click", (e) => {
+    let arr = e.target.parentElement.children;
+    localStorage.setItem("imgSrc", arr[0].src);
+    localStorage.setItem("headingProduct", arr[1].children[1].innerHTML);
+    localStorage.setItem("priceProduct", arr[1].children[3].innerHTML);
     window.location.href = "product-details.html";
   });
 });
 
-// Logic Of Details Page
-let mainImage = document.querySelector(".main-image");
-let smallImgs = document.querySelectorAll(".small-image img");
-smallImgs.forEach((image) => {
-  image.addEventListener("click", (e) => {
-    mainImage.src = e.target.src;
-  });
-});
-
+// Logic Of Cart Page

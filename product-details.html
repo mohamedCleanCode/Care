@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Care</title>
+    <title>Care | Product Details</title>
     <!-- Render Elements -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font Awesome -->
@@ -25,7 +25,7 @@
     <!-- Start Header  -->
     <div class="header" id="header">
         <div class="container">
-            <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+            <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="shop.html">Shop</a></li>
@@ -40,28 +40,11 @@
 
     <!-- Start Product Deatils -->
     <div class="product-details">
-        <div class="container">
-            <div class="product-image-details">
-                <img class="main-image" src="./img/products/f1.jpg" alt="">
-                <div class="small-imgs-container">
-                    <div class="small-image">
-                        <img src="./img/products/f1.jpg" alt="">
-                    </div>
-                    <div class="small-image">
-                        <img src="./img/products/f2.jpg" alt="">
-                    </div>
-                    <div class="small-image">
-                        <img src="./img/products/f3.jpg" alt="">
-                    </div>
-                    <div class="small-image">
-                        <img src="./img/products/f4.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+        <div class="container" id="cont">
             <div class="product-image-info">
                 <span>Home/T-shirt</span>
-                <h1>Men's Fashion T-shirt</h1>
-                <h2>$139.00</h2>
+                <h1></h1>
+                <h2></h2>
                 <select name="size" id="size-select">
                     <option>Selct Size</option>
                     <option value="small">Small</option>
@@ -71,7 +54,7 @@
                     <option value="xxl">XXL</option>
                 </select>
                 <input type="number" value="1">
-                <button>Add To Cart</button>
+                <button class="add-to-cart">Add To Cart</button>
                 <div class="info">
                     <h3>Product Deatils</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore praesentium voluptate,
@@ -82,80 +65,6 @@
         </div>
     </div>
     <!-- End Product Deatils -->
-
-    <!-- Start Products  -->
-    <div class="products">
-        <div class="title">
-            <h1>Featured Products</h1>
-            <p>Summer collection new morden design</p>
-        </div>
-        <div class="container">
-            <div class="product">
-                <img src="img/products/f1.jpg" alt="one">
-                <div class="desc">
-                    <span>adidas</span>
-                    <h3>Cartoon Astronaust T-Shirt</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <span class="price">$78</span>
-                </div>
-                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-            <div class="product">
-                <img src="img/products/f2.jpg" alt="one">
-                <div class="desc">
-                    <span>adidas</span>
-                    <h3>Cartoon Astronaust T-Shirt</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <span class="price">$78</span>
-                </div>
-                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-            <div class="product">
-                <img src="img/products/f3.jpg" alt="one">
-                <div class="desc">
-                    <span>adidas</span>
-                    <h3>Cartoon Astronaust T-Shirt</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <span class="price">$78</span>
-                </div>
-                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-            <div class="product">
-                <img src="img/products/f4.jpg" alt="one">
-                <div class="desc">
-                    <span>adidas</span>
-                    <h3>Cartoon Astronaust T-Shirt</h3>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <span class="price">$78</span>
-                </div>
-                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- End Products  -->
 
     <!-- Start Sign Up -->
     <div class="sign-up">
@@ -230,6 +139,7 @@
     <!-- JS Files -->
     <script src="js/all.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/product-details.js"></script>
 </body>
 
 </html>
